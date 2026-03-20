@@ -5,7 +5,7 @@
   --letter-shadow: rgba(0, 0, 0, 0.25);
 }
 
-/* Конверт */
+
 .envelope-wrapper {
   position: relative;
   display: flex;
@@ -33,7 +33,7 @@
   overflow: hidden;
 }
 
-/* Письмо внутри конверта */
+
 .letter {
   position: absolute;
   top: 45px;
@@ -69,7 +69,7 @@
   line-height: 1.5;
 }
 
-/* Клапан конверта */
+
 .envelope-flap {
   position: absolute;
   border-left: 150px solid transparent;
@@ -85,7 +85,7 @@
   z-index: 1;
 }
 
-/* Передняя часть конверта */
+
 .envelope-front {
   position: absolute;
   top: 40px;
@@ -98,7 +98,7 @@
   z-index: 3;
 }
 
-/* Сургучная печать */
+
 .wax-seal {
   position: absolute;
   top: 90px;
@@ -121,7 +121,7 @@
   opacity: 0;
 }
 
-/* Фото-фонтан */
+
 .photo-fountain {
   position: absolute;
   top: 95px;
@@ -133,7 +133,7 @@
   pointer-events: none;
 }
 
-/* Стили вылетающих фото */
+
 .flying-photo {
   position: absolute;
   width: 80px;
