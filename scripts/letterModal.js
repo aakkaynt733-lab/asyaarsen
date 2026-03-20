@@ -98,13 +98,13 @@
 
     photoFountainContainer.appendChild(photo);
 
-    // Удаление фото после анимации
+    
     setTimeout(() => {
       photo.remove();
     }, 2100);
   }
 
-  // Очистка всех летающих фото
+  
   function clearFlyingPhotos() {
     const photos = photoFountainContainer.querySelectorAll(".flying-photo");
     photos.forEach((photo) => photo.remove());
