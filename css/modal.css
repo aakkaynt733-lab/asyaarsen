@@ -1,0 +1,105 @@
+:root {
+  --modal-overlay-bg: rgba(0, 0, 0, 0.55);
+  --modal-content-bg: rgba(255, 255, 255, 0.96);
+}
+
+/* Модальное окно */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--modal-overlay-bg);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 999;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-card {
+  position: relative;
+  width: min(92vw, 720px);
+  height: min(88vh, 620px);
+  padding: 26px 22px 20px;
+  border-radius: 22px;
+  background: var(--modal-content-bg);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  gap: 18px;
+
+  align-items: center;
+  justify-content: center;
+
+  color: black;
+}
+
+/* Текст письма в модальном окне */
+.modal-text {
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal-text h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  color: black;
+}
+
+.modal-text p {
+  margin: 0;
+  color: black;
+  line-height: 1.5;
+}
+
+/* Контейнер для фото-фонтана в модальном окне */
+.modal-photo-fountain {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Кнопка закрытия модального окна */
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  color: #222;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.modal-close:hover {
+  background: rgba(0, 0, 0, 0.17);
+}

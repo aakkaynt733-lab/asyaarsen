@@ -1,0 +1,46 @@
+:root {
+  --fs-h1: 36px;
+  --fs-h2: 32px;
+  --fs-h3: 24px;
+  --fs-h4: 20px;
+  --fs-h5: 18px;
+  --fs-base: 16px;
+  --fs-mini: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  color: white;
+}
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+h4 {
+  font-size: var(--fs-h4);
+}
+
+h5 {
+  font-size: var(--fs-h5);
+}

@@ -1,0 +1,86 @@
+#why {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #000000; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+
+#why > div:first-child,
+#why > div:last-child {
+  width: 100%;
+  text-align: center;
+  transform: none !important;
+  margin-bottom: 30px;
+}
+
+#why h2 {
+  color: #d63384;
+  font-size: 2rem;
+}
+
+#why h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+
+#why > div {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 150px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+
+#why > div:hover {
+  transform: scale(1.1) rotate(0deg) !important;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+
+#why > div:nth-child(odd) {
+  transform: rotate(-3deg) translateY(10px);
+}
+
+#why > div:nth-child(even) {
+  transform: rotate(2deg) translateY(-10px);
+}
+
+#why > div:nth-child(3n) {
+  transform: rotate(5deg) scale(0.95);
+}
+
+#why > div:nth-child(4n) {
+  transform: rotate(-5deg) translateY(5px);
+}
+
+
+#why span {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #555;
+  text-align: center;
+}
+
+
+#why > div:last-child h3 {
+  color: #d63384;
+  font-size: 1.8rem;
+  background: #ffe6eb;
+  padding: 15px 30px;
+  border-radius: 50px;
+  display: inline-block;
+}

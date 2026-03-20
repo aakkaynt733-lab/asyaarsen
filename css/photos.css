@@ -1,0 +1,52 @@
+Основной контейнер */
+#photos {
+    position: relative;
+    height: 100vh; /* занимаем всю высоту окна */
+    background-color: #ffffff; /* белый фон */
+    overflow: hidden; /* скрываем содержимое вне границ */
+}
+
+/* Внешняя оболочка для каждой фотографии */
+.seventhh {
+    position: absolute; /* абсолютное позиционирование */
+    width: fit-content; /* минимальная нужная ширина */
+    height: fit-content; /* минимальная нужная высота */
+}
+
+/* Внутреннее изображение */
+.seventhh img {
+    width: 200px; /* фиксированная ширина */
+    height: auto; /* сохранение соотношения сторон */
+    object-fit: cover; /* заполняем область целиком */
+    border-radius: 8px; /* слегка округлим углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* лёгкая тень */
+    transition: transform 0.3s ease; /* анимация */
+}
+
+/* Назначаем разные случайные позиции для каждого изображения */
+.seventhh:nth-of-type(1) img { top: 10%; left: 10%; }
+.seventhh:nth-of-type(2) img { top: 30%; left: 40%; }
+.seventhh:nth-of-type(3) img { top: 50%; left: 70%; }
+.seventhh:nth-of-type(4) img { top: 70%; left: 20%; }
+.seventhh:nth-of-type(5) img { top: 10%; left: 60%; }
+.seventhh:nth-of-type(6) img { top: 40%; left: 10%; }
+.seventhh:nth-of-type(7) img { top: 60%; left: 50%; }
+.seventhh:nth-of-type(8) img { top: 20%; left: 30%; }
+.seventhh:nth-of-type(9) img { top: 80%; left: 80%; }
+.seventhh:nth-of-type(10) img { top: 50%; left: 20%; }
+.seventhh:nth-of-type(11) img { top: 30%; left: 70%; }
+.seventhh:nth-of-type(12) img { top: 10%; left: 50%; }
+.seventhh:nth-of-type(13) img { top: 70%; left: 40%; }
+.seventhh:nth-of-type(14) img { top: 20%; left: 80%; }
+.seventhh:nth-of-type(15) img { top: 60%; left: 20%; }
+.seventhh:nth-of-type(16) img { top: 40%; left: 60%; }
+.seventhh:nth-of-type(17) img { top: 80%; left: 10%; }
+.seventhh:nth-of-type(18) img { top: 10%; left: 30%; }
+.seventhh:nth-of-type(19) img { top: 50%; left: 80%; }
+.seventhh:nth-of-type(20) img { top: 30%; left: 50%; }
+.seventhh:nth-of-type(21) img { top: 70%; left: 10%; }
+
+/* Увеличиваем изображение при наведении */
+.seventhh img:hover {
+    transform: scale(1.1); /* незначительный зум */
+}
